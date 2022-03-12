@@ -8,7 +8,8 @@ const tipPerPersonDisplay = document.querySelector(".tip-amount-per-person");
 const totalPerPersonDisplay = document.querySelector(".total-amount-per-person");
 
 let tipPercent;
-let numPeople;
+let numPeople = 1;
+numOfPeople.defaultValue = 1;
 
 billInput.addEventListener("input", getBillValue);
 function getBillValue() {
