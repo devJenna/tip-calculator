@@ -6,8 +6,11 @@ const numOfPeople = document.querySelector(".number-of-people");
 const tipPerPersonDisplay = document.querySelector(".tip-amount-per-person");
 const totalPerPersonDisplay = document.querySelector(".total-amount-per-person");
 
+// billInput.defaultValue = 0.00;
+numOfPeople.defaultValue = 1;
+
 // bill input 
-billInput.addEventListener("change", tipCalculate);
+billInput.addEventListener("input", tipCalculate);
 function tipCalculate(button) {
     let bill = parseFloat(billInput.value);
     console.log(bill);
@@ -16,12 +19,14 @@ function tipCalculate(button) {
     }
 
     let tipPercent = parseFloat(button.target.textContent) / 100;
-    let tipAmount = parseFloat((bill * tipPercent).toFixed(2));
+    let tipAmount = parseFloat((bill * tipPercent)).toFixed(2);
     tipAmountDisplay.textContent = `\$${tipAmount}`;
     console.log(tipPercent);
     console.log(tipAmount);
 
-    let totalAmount = (bill + tipAmount).toFixed(2);
+    // two decimal places for all the amount
+    let totalAmount = (parseFloat(bill) + parseFloat(tipAmount)).toFixed(2);
+    // let totalAmount = (bill + tipAmount).toFixed(2);
     totalAmountDisplay.textContent = `\$${totalAmount}`;
 
     numOfPeople.addEventListener("input", perPerson);
