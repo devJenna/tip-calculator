@@ -20,11 +20,18 @@ function getBillValue() {
 }
 
 tipInput.forEach(function (button) {
-    button.addEventListener("click", () => {
-        tipPercent = parseFloat(button.innerHTML) / 100;
-        calculateTip();
-    })
+    button.addEventListener("click", getTipPercent);
 })
+function getTipPercent(event) {
+    tipInput.forEach(function (button) {
+        button.classList.remove("selected-tip");
+        if (event.target.innerHTML === button.innerHTML) {
+            button.classList.add("selected-tip");
+            tipPercent = parseFloat(button.innerHTML) / 100;
+        }
+    })
+    calculateTip();
+}
 
 
 customTip.addEventListener("input", getCustomTip);
