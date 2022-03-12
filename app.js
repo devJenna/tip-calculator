@@ -35,6 +35,9 @@ function tipCalculate(button) {
         let totalPerPerson = (totalAmount / numPeople).toFixed(2);
         totalPerPersonDisplay.textContent = `\$${totalPerPerson}`;
     };
+
+    // allow amount per person change according to the change of tip option
+    perPerson();
 };
 
 
