@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   /* display: flex;
+   justify-content: center;
+   align-items: center; */
+   
+   
+   /* width: 500px; */
+   width: 70vw;
+   padding: 1rem;
+   border: 1px solid black;
+   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+} 
+
+.wrapper, .tip-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 1rem;
+}
+.tip-option-wrapper {
+    display: flex;
+    flex-direction: column;
+
+}
+.tip-option-buttons {
+    margin-left: 1rem;
+}
