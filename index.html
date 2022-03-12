@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="wrapper">
+            <label for="bill" id="bill">Bill</label>
+            <input type="number" class="bill-amount">
+        </form>
+        <div class="wrapper">
+            <div class="tip">Tip</div>
+            <div class="tip-amount">$0</div>
+        </div>
+        <hr>
+        <div class="wrapper">
+            <div class="total">Total Amount</div>
+            <div class="total-amount">$0</div>
+        </div>
+        <hr>
+        <div class="tip-option-wrapper">
+            <div class="tip-option">Tip Option</div>
+            <div class="tip-option-buttons"> <button class="tip-option-button">5%</button>
+                <button class="tip-option-button">10%</button>
+                <button class="tip-option-button">15%</button>
+                <button class="tip-option-button">20%</button>
+                <button class="tip-option-button">25%</button>
+                <button class="tip-option-button">30%</button>
+                <input type="number" class="tip-option-input" placeholder="Custom %">
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="people-count">Number of People</div>
+            <input type="number" class="number-of-people">
+        </div>
+        <hr>
+        <div class="per-container">
+            <div class="wrapper">
+                <div class="tip-per-person">Tip Per Person</div>
+                <div class="tip-amount-per-person">$0</div>
+            </div>
+            <div class="wrapper">
+                <div class="total-per-person">Total Amount Per Person</div>
+                <div class="total-amount-per-person">$0</div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
