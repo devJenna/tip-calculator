@@ -42,6 +42,10 @@ function getCustomTip() {
     customTip.classList.add("custom-tip");
     tipPercent = parseFloat(customTip.value) / 100;
     console.log(tipPercent);
+    // remove classList when custom tip is blank
+    if (customTip.value == "") {
+        customTip.classList.remove("custom-tip");
+    }
     calculateTip()
 }
 
