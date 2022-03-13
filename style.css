@@ -6,12 +6,28 @@
     font-family: 'Mukta', sans-serif;
     /* font-family: 'Saira', sans-serif; */
 }
-
+body {
+    /* background-color: rgba(97, 99, 240, 0.507); */
+    /* background: linear-gradient(45deg, red, blue); */
+    /* background: linear-gradient(#e66465, #9198e5); */
+    background: linear-gradient(#e77b7b, #7c86f3);
+    /* background: linear-gradient(135deg, #e66465, #9198e5); */
+    /* background: linear-gradient(135deg, #e66465, #9198e5); */
+    /* background: linear-gradient(135deg, #e77b7b, #7c86f3); */
+    /* background: linear-gradient(-45deg, #f07a57, #e73c7e, #23a6d5, #23d5ab); */
+    /* background: linear-gradient(-45deg, #f07b57c7, #d6789ccc, #5595e9c5, #70a0e9); */
+    background: linear-gradient(-45deg, #f08260c7, #d6789ccc, #5595e9c5, #70a0e9d2);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
-   position: absolute;
+   /* position: absolute;
    left: 50%;
    top: 50%;
-   transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%); */
    /* display: flex;
    justify-content: center;
    align-items: center; */
@@ -20,8 +36,11 @@
    /* width: 500px; */
    width: 70vw;
    padding: 1rem;
-   border: 1px solid black;
+   /* border: 1px solid black; */
    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+
+   background-color: white;
+   /* background: linear-gradient(45deg, red, blue); */
 } 
 
 .wrapper, .tip-option {
@@ -41,8 +60,19 @@
 }
 
 .selected-tip{
-    background-color: gray;
+    /* background-color: gray; */
+    /* background-color: rgba(176, 176, 247, 0.719); */
+    background-color: rgba(171, 171, 243, 0.61);
 }
 .custom-tip {
-    background-color: lightgreen;
+    /* background-color: lightgreen; */
+    /* background-color: rgba(176, 176, 247, 0.719); */
+    background-color: rgba(171, 171, 243, 0.61);
+}
+
+.per-container {
+    /* background-color: lavender; */
+    /* background-color: rgba(165, 165, 248, 0.788); */
+    /* background-color: rgba(176, 176, 247, 0.719); */
+    background-color: rgba(171, 171, 243, 0.61);
 }
