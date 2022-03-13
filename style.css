@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: 'Baloo 2', cursive; */
+    font-family: 'Mukta', sans-serif;
+    /* font-family: 'Saira', sans-serif; */
 }
 
 .container {
