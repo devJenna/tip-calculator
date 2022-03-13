@@ -66,7 +66,7 @@ body {
     width: 3rem;
     height: 1.5rem;
     font-size: 1rem;
-    /* align-items: center; */
+    /* align-items: center; */ 
 }
 .tip-option-input {
     color: black;
@@ -79,6 +79,7 @@ body {
     font-size: 1rem;
     padding: 0rem 0.75rem;
     text-align: right;
+    outline: none;
 }
 
 .selected-tip{
@@ -99,10 +100,28 @@ body {
     width: 5.5rem;
     font-size: 1rem;
 }
-
+.bill-amount {
+    outline: none;
+    /* border-color: rgba(171, 171, 243, 0.61); */
+}
+.number-of-people{
+    outline: none;
+    /* background-color: lavender; */
+}
+.number-of-people:focus {
+    /* background-color: rgba(165, 165, 248, 0.788); */
+    /* background-color: rgba(144, 144, 247, 0.788); */
+    /* background-color: rgba(176, 176, 247, 0.719); */
+    outline: none;
+    background-color: rgba(171, 171, 243, 0.61);
+    /* border-style: none; */
+}
 .per-container {
     /* background-color: lavender; */
     /* background-color: rgba(165, 165, 248, 0.788); */
     /* background-color: rgba(176, 176, 247, 0.719); */
     background-color: rgba(171, 171, 243, 0.61);
+    padding: 0.25rem 0rem;
+    margin: 1rem;
+    border-radius: 0.25rem;
 }
