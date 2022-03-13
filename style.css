@@ -78,7 +78,8 @@ body {
     height: 1.5rem;
     font-size: 1rem;
     padding: 0rem 0.75rem;
-    text-align: right;
+    /* text-align: right; */
+    text-align: center;
     outline: none;
     position: relative;
 }
@@ -98,11 +99,23 @@ body {
 }
 
 .bill-amount, .number-of-people {
-    text-align: right;
+    /* text-align: right; */
+    text-align: center;
     /* width: 35%; */
     /* width: 87px; */
     width: 5.5rem;
     font-size: 1rem;
+    padding-right: 0.5rem;
+}
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+hr {
+    /* border: 1px solid rgb(116, 52, 141); */
+    /* border: 1px solid rgb(116, 52, 141); */
+    border: 0;
+    /* border-top: 3px double rgb(116, 52, 141); */
+    border-top: 3px double rgb(167, 167, 167);
 }
 .bill-amount {
     outline: none;
