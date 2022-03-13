@@ -35,6 +35,8 @@ function getTipPercent(event) {
 
 
 customTip.addEventListener("input", getCustomTip);
+// remove selected tip button when custom tip is entered
+customTip.addEventListener("input", getTipPercent);
 function getCustomTip() {
     tipPercent = parseFloat(customTip.value) / 100;
     console.log(tipPercent);
