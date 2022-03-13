@@ -40,3 +40,6 @@
 .selected-tip{
     background-color: gray;
 }
+.custom-tip {
+    background-color: lightgreen;
+}
