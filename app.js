@@ -28,6 +28,9 @@ function getTipPercent(event) {
         if (event.target.innerHTML === button.innerHTML) {
             button.classList.add("selected-tip");
             tipPercent = parseFloat(button.innerHTML) / 100;
+            // remove previously entered custom tip value and style when tip button is clicked
+            customTip.classList.remove("custom-tip");
+            customTip.value = "";
         }
     })
     calculateTip();
