@@ -61,20 +61,20 @@ function getNumPeople() {
 }
 
 function calculateTip() {
-    tipAmount = parseFloat((bill * tipPercent).toFixed(2));
+    tipAmount = parseFloat(bill * tipPercent);
     // console.log(tipAmount); 
-    tipAmountDisplay.textContent = `\$${tipAmount}`;
+    tipAmountDisplay.textContent = `\$${tipAmount.toFixed(2)}`;
 
-    totalAmount = parseFloat((bill + tipAmount).toFixed(2));
+    totalAmount = parseFloat(bill + tipAmount);
     // console.log(totalAmount);
-    totalAmountDisplay.textContent = `\$${totalAmount}`;
+    totalAmountDisplay.textContent = `\$${totalAmount.toFixed(2)}`;
 
-    tipPerPerson = parseFloat((tipAmount / numPeople).toFixed(2));
+    tipPerPerson = parseFloat(tipAmount / numPeople);
     // console.log(tipPerPerson);
-    tipPerPersonDisplay.textContent = `\$${tipPerPerson}`;
+    tipPerPersonDisplay.textContent = `\$${tipPerPerson.toFixed(2)}`;
 
-    totalPerPerson = parseFloat((totalAmount / numPeople).toFixed(2));
+    totalPerPerson = parseFloat(totalAmount / numPeople);
     // console.log(totalPerPerson);
-    totalPerPersonDisplay.textContent = `\$${totalPerPerson}`;
+    totalPerPersonDisplay.textContent = `\$${totalPerPerson.toFixed(2)}`;
 }
 
