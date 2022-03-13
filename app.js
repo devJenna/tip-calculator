@@ -7,7 +7,7 @@ const totalAmountDisplay = document.querySelector(".total-amount");
 const tipPerPersonDisplay = document.querySelector(".tip-amount-per-person");
 const totalPerPersonDisplay = document.querySelector(".total-amount-per-person");
 
-let tipPercent;
+let tipPercent = 0;
 let numPeople = 1;
 numOfPeople.defaultValue = 1;
 
@@ -16,12 +16,18 @@ function getBillValue() {
     // bill = billInput.value;
     bill = parseFloat(billInput.value);
     console.log(bill);
-    calculateTip()
-}
+    // tipPercent = 0;
+    // reset bill and tip amount when bill input is updated
+    if (billInput.value == "") {
+        bill = 0;
+        tipAmount = 0;
+    }
+    calculateTip();
+};
 
 tipInput.forEach(function (button) {
     button.addEventListener("click", getTipPercent);
-})
+});
 function getTipPercent(event) {
     tipInput.forEach(function (button) {
         button.classList.remove("selected-tip");
@@ -31,10 +37,10 @@ function getTipPercent(event) {
             // remove previously entered custom tip value and style when tip button is clicked
             customTip.classList.remove("custom-tip");
             customTip.value = "";
-        }
-    })
+        };
+    });
     calculateTip();
-}
+};
 
 
 customTip.addEventListener("input", getCustomTip);
@@ -48,17 +54,17 @@ function getCustomTip() {
     // remove classList when custom tip is blank
     if (customTip.value == "") {
         customTip.classList.remove("custom-tip");
-    }
-    calculateTip()
-}
+    };
+    calculateTip();
+};
 
 numOfPeople.addEventListener("input", getNumPeople);
 function getNumPeople() {
     // numPeople = numOfPeople.value;
     numPeople = parseFloat(numOfPeople.value);
     console.log(numPeople);
-    calculateTip()
-}
+    calculateTip();
+};
 
 function calculateTip() {
     tipAmount = parseFloat(bill * tipPercent);
@@ -76,5 +82,5 @@ function calculateTip() {
     totalPerPerson = parseFloat(totalAmount / numPeople);
     // console.log(totalPerPerson);
     totalPerPersonDisplay.textContent = `\$${totalPerPerson.toFixed(2)}`;
-}
+};
 
