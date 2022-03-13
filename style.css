@@ -80,8 +80,12 @@ body {
     padding: 0rem 0.75rem;
     text-align: right;
     outline: none;
+    position: relative;
 }
-
+.percent {
+    position: absolute;
+    margin-left: -20px;
+}
 .selected-tip{
     /* background-color: gray; */
     /* background-color: rgba(176, 176, 247, 0.719); */
