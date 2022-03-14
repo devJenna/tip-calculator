@@ -79,9 +79,8 @@ body {
     width: 6.25rem;
     height: 1.75rem;
     font-size: 1rem;
-    /* padding: 0rem 0.75rem; */
-    padding: 0rem 1.5rem;
-    text-align: right;
+    padding: 0rem 0.75rem;
+    text-align: center;
     outline: none;
     position: relative;
 }
@@ -107,7 +106,8 @@ body {
 }
 
 .bill-amount, .number-of-people {
-    text-align: right;
+    /* text-align: right; */
+    text-align: center;
     /* width: 35%; */
     /* width: 87px; */
     width: 5.5rem;
