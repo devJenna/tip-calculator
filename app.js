@@ -24,6 +24,18 @@ function getBillValue() {
     }
     calculateTip();
 };
+// to prevent reloading when enter key is pressed
+billInput.addEventListener("keydown", (e) => {
+    if (e.keyCode === 13) {
+        // alert("enter key is pressed!");
+        e.preventDefault();
+    }
+})
+
+// another way to prevent reloading when enter key is pressed
+// document.querySelector("form").addEventListener("submit", (e) => {
+//     e.preventDefault();
+// })
 
 tipInput.forEach(function (button) {
     button.addEventListener("click", getTipPercent);
