@@ -85,7 +85,8 @@ body {
     position: relative;
 }
 /* align left placeholder text */
-.tip-option-input::placeholder, .tip-option-input:-ms-input-placeholder {
+/* .tip-option-input::placeholder, .tip-option-input:-ms-input-placeholder { */
+.tip-option-input::placeholder{
     text-align: left;
 }
 .percent {
