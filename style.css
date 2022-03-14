@@ -84,6 +84,10 @@ body {
     outline: none;
     position: relative;
 }
+/* align left placeholder text */
+.tip-option-input::placeholder, .tip-option-input:-ms-input-placeholder {
+    text-align: left;
+}
 .percent {
     position: absolute;
     /* margin-left: -20px; */
@@ -144,6 +148,7 @@ hr {
     margin: 1rem;
     border-radius: 0.25rem;
 }
+
 
 /* @media (max-width: 597px){ */
 @media only screen and (max-width: 768px){
